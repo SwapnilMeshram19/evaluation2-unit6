@@ -1,5 +1,7 @@
 import React from "react";
+import LoginNavbar from "../components/LoginNavbar";
 import Navbar from "../components/Navbar";
+import Products from "../components/Products";
 import Login from "./Login";
 
 const Home = () => {
@@ -18,8 +20,11 @@ const loginUser=(email,password)=>{
 
   return <div>
 
-    <Navbar authenticate={authenticate}/>
+
+    {{authenticate}?<LoginNavbar/>:<Navbar/>}
     <Login loginUser={loginUser}/>
+
+    <Products/>
     
     </div>;
 };
