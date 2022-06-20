@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  width:100%;
+  text-align: center;
+}
+.navbar>h3{
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
